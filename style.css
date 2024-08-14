@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Century, sans-serif;
+}
+
+/* Main Section */
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(rhons.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    position: relative;
+}
+
+/* Logo */
+.logos {
+    position: absolute;
+    top: 20px; /* Adjusted for a bit of spacing from the top */
+    left: 50px;
+    width: 150px; /* Adjust width if needed */
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 20px; /* Align with logo vertically */
+    right: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Myinfo Section */
+.Myinfo {
+    color: lightcyan;
+    text-align: left;
+    max-width: 700px;
+    padding: 100px;
+    margin-top: 400px;
+    margin-left: 100px; /* Increase margin-top to push it lower */
+    /* Or you can use padding-top if you want spacing within the section */
+}
+
+.Myinfo h1 {
+    font-size: 3rem;
+}
+
+.Myinfo span {
+    color: red;
+}
+
+.Myinfo h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.Myinfo h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.justify-text {
+
+    text-align: justify;
+    /* Optional: Add padding for better readability */
+    padding: 30 30px; /* Adjust padding as needed */
+}
+
+/* About Section */
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.about img {
+    width: 430px;
+    height: auto;
+}
+
+.about-text {
+    max-width: 550px;
+    color: white;
+    text-align: justify;
+}
+
+.about-text h2 {
+    font-size: 3rem; /* Adjusted for balance */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 1rem;
+}
